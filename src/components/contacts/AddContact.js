@@ -33,10 +33,6 @@ class AddContact extends Component {
         return;
       }
 
-
-
-
-
       const newContact = {
         id: uuid(),
         name,
@@ -53,6 +49,8 @@ class AddContact extends Component {
         phone: '',
         errors: {}
       })
+
+      this.props.history.push('/');
 
 
 
